@@ -25,5 +25,18 @@ def find_max_value(array)
 end
 
 def find_min_value(array)
+  min = nil
+  i = 0
+  while i < array.length do
+    num = array[i]
+    if min == nil
+      min = num
+    elsif num < min
+      min = num
+    end
 
+    i += 1
+  end
+
+  return min
 end
